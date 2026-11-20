@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Warfare Aversion Level",
+    "scope": "Civ",
+    "default": 0,
+    "min": 0,
+    "isDisplay": true
+  }
+]
