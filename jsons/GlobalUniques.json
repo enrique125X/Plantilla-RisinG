@@ -1,8 +1,8 @@
 {
-  "name": "GlobalUniques",
+  "name": "Global Uniques",
   "uniques": [
-    "Trigger the function [onTurnStart] <upon turn start>",
-    "Trigger the function [onCityConquered] <upon conquering a city>",
+    "Trigger the function [onTurnStart] with [] <upon turn start>",
+    "Trigger the function [onCityConquered] with [] <upon conquering a city>",
     "[-1]% [Gold] <for every [3] [Warfare Aversion Level]> <when above [10] [Warfare Aversion Level]>",
     "[+1]% Unhappiness from [Population] [in all cities] <for every [3] [Warfare Aversion Level]> <when above [30] [Warfare Aversion Level]>",
     "[-1]% [Production] [in all cities] <for every [3] [Warfare Aversion Level]> <when above [50] [Warfare Aversion Level]>",
@@ -13,6 +13,6 @@
     "[-1]% Strength <for [Military] units> <for every [3] [Warfare Aversion Level]> <when above [100] [Warfare Aversion Level]>"
   ],
   "unitUniques": [
-    "Trigger the function [onUnitDefeated] <upon being defeated>"
+    "Trigger the function [onUnitDefeated] with [] <upon being defeated>"
   ]
 }
