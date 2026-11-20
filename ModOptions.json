@@ -1,0 +1,16 @@
+{
+  "name": "Sistema de Aversion a la Guerra",
+  "author": "UncivCN ModForge",
+  "modUrl": "",
+  "version": "1.0.0",
+  "uncivCNFeatures": {
+    "luaEnabled": true,
+    "entryScripts": [
+      "scripts/warfare_aversion.lua"
+    ],
+    "customVariables": [
+      "Warfare Aversion Level"
+    ]
+  },
+  "isBaseRuleset": false
+}
