@@ -1,0 +1,26 @@
+{
+    "name": "Global uniques",
+    "uniques": [ 
+
+    "Upon capturing a city, receive [10] times its [Culture] production as [Culture] immediately",
+    "Upon capturing a city, receive [10] times its [Science] production as [Science] immediately",
+    "Upon capturing a city, receive [10] times its [Gold] production as [Gold] immediately",
+    
+    // 5回合历史移动平均存储
+//    "Set [TG] to [[Gold] Per Turn] <upon turn end>",
+//    "Set [P0] to [[TG] resource of [Major] Civilizations] <upon turn start> <when number of [[turns]%5] is equal to [0]>",
+//    "Set [P1] to [[TG] resource of [Major] Civilizations] <upon turn start> <when number of [[turns]%5] is equal to [1]>",
+//    "Set [P2] to [[TG] resource of [Major] Civilizations] <upon turn start> <when number of [[turns]%5] is equal to [2]>",
+ //   "Set [P3] to [[TG] resource of [Major] Civilizations] <upon turn start> <when number of [[turns]%5] is equal to [3]>"    "Set [P4] to [[TG] resource of [Major] Civilizations] <upon turn start> <when number of [[turns]%5] is equal to [4]>", 
+      
+    // 计算
+//    "Set [Price Index] to [min(max((47.6*[[TG] resource of [Major] Civilizations]/([P0]+[P1]+[P2]+[P3]+[P4])-20+[TG]*[Remaining [Major] Civilizations]/[[TG] resource of [Major] Civilizations]*10), -50), 200)] <upon turn end>",
+    
+    
+    
+    // 影响
+ //   "[Gold] cost of purchasing items in cities [+1]% <for every [Price Index]> <when number of [Price Index] is more than [0]>",
+ //   "[Gold] cost of purchasing items in cities [-1]% <for every [abs([Price Index])]> <when number of [Price Index] is less than [0]>"
+    
+    ]
+}
