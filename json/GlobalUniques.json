@@ -21,10 +21,7 @@
     
     // 影响
     "[Gold] cost of purchasing items in cities [+1]% <for every [Price Index]> <when number of [Price Index] is more than [0]>",
-    "[Gold] cost of purchasing items in cities [-1]% <for every [abs([Price Index])]> <when number of [Price Index] is less than [0]>",
+    "[Gold] cost of purchasing items in cities [-1]% <for every [abs([Price Index])]> <when number of [Price Index] is less than [0]>"
     
-    // 马里物价指数修正
-    "[Gold] cost of purchasing items in cities [-1]% <for every [Price Index]> <when number of [Price Index] is more than [0]> <for [Mali] Civilizations>",
-    "[Gold] cost of purchasing items in cities [+1]% <for every [abs([Price Index])]> <when number of [Price Index] is less than [0]> <for [Mali] Civilizations>",
     ]
 }
