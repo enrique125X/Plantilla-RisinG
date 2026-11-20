@@ -97,6 +97,8 @@
 //	"[+5 Gold] [in capital] <for every [Number of Production (Temp1)]> <for [Mali] Civilizations>",
 //    "[Gold] cost of purchasing [Palace Guard] units [-33]%"
     ],
+    
+/*    
     "unitUniques": [
     // 全体修正
         "May attack when embarked",
@@ -164,4 +166,6 @@
     // 其他修正
     "Can build [Farm] improvements on tiles <for [Human player] Civilizations> <for [Foot Soldier] units> <after adopting [Military Reclamation System]>", "Can build [Mine] improvements on tiles <for [Human player] Civilizations> <for [Foot Soldier] units> <after adopting [Military Reclamation System]>"
     ]
+    
+    */
 }
