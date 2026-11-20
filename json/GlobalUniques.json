@@ -1,17 +1,11 @@
 {
     "name": "Global uniques",
-    "uniques": [
-    // 战争修正
-    "Set [City loss penalty] to [11] <upon losing a city>", "Provides [-1] [City loss penalty] <when above [0] [City loss penalty]>",
-     "[-10]% [Culture] [in all cities] <when above [0] [City loss penalty]>", "[-10]% [Science] [in all cities] <when above [0] [City loss penalty]>", "[-10]% [Gold] [in all cities] <when above [0] [City loss penalty]>"
-     
+    "uniques": [ 
+
     "Upon capturing a city, receive [10] times its [Culture] production as [Culture] immediately",
     "Upon capturing a city, receive [10] times its [Science] production as [Science] immediately",
     "Upon capturing a city, receive [10] times its [Gold] production as [Gold] immediately",
     
-    // 法兰克
-    "Instantly provides [1] [Buildable Barbarian encampment] <upon turn end> <when number of [[turns]%10] is equal to [0]> <for [Franks] Civilizations> <when number of [turns] is more than [0]>"
-    // 经济热度系统
     // 5回合历史移动平均存储
     "Set [TG] to [[Gold] Per Turn] <upon turn end>",
     "Set [P0] to [[TG] resource of [Major] Civilizations] <upon turn start> <when number of [[turns]%5] is equal to [0]>",
@@ -32,53 +26,7 @@
     // 马里物价指数修正
     "[Gold] cost of purchasing items in cities [-1]% <for every [Price Index]> <when number of [Price Index] is more than [0]> <for [Mali] Civilizations>",
     "[Gold] cost of purchasing items in cities [+1]% <for every [abs([Price Index])]> <when number of [Price Index] is less than [0]> <for [Mali] Civilizations>",
-    
-    // 行商
-    "Instantly provides [1] [Itinerant Merchant Capacity] <upon entering a new era>",
-    
-    // 文化胜利
-    "Provides [-1] [External Cultural Influence] <for every [2*([[Tourist Attractions] Tiles]-[Owned [Tourist Attractions] Tiles])+5*([[Landmark] Tiles]-[Owned [Landmark] Tiles])]> <when [Cultural] Victory is enabled> <when number of [External Cultural Influence] is more than [2*([[Tourist Attractions] Tiles]-[Owned [Tourist Attractions] Tiles])+5*([[Landmark] Tiles]-[Owned [Landmark] Tiles])]>",
-    "[+0]% [External Cultural Influence] resource production <when number of [[Culture] Per Turn] is between [1] and [63]> <when [Cultural] Victory is enabled>",
-    "[+100]% [External Cultural Influence] resource production <when number of [[Culture] Per Turn] is between [64] and [728]> <when [Cultural] Victory is enabled>",
-    "[+200]% [External Cultural Influence] resource production <when number of [[Culture] Per Turn] is between [729] and [4095]> <when [Cultural] Victory is enabled>",
-    "[+300]% [External Cultural Influence] resource production <when number of [[Culture] Per Turn] is between [4096] and [15624]> <when [Cultural] Victory is enabled>",
-    "[+400]% [External Cultural Influence] resource production <when number of [[Culture] Per Turn] is more than [15624]> <when [Cultural] Victory is enabled>",
-  
-    
-    
-    
-    
-    
-    // 世界会议
-    // 初始化
-    "Set [Temp2] to [30] <upon turn end> <if [Announcing the commencement of the World Congress] is constructed by anybody> <when number of [Temp2] is equal to [0]> <when [World Conference(Recommended to enable)] Victory is enabled>",
-    
-        "Gain a free [n1] [in capital] <if [Announcing the commencement of the World Congress] is constructed> <when number of [abs([turns]*[[improved] Tiles]-[[Forest] Tiles])%5+1] is equal to [1]> <when number of [Temp2] is equal to [23]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>", "Gain a free [n2] [in capital] <if [Announcing the commencement of the World Congress] is constructed> <when number of [abs([turns]*[[improved] Tiles]-[[Forest] Tiles])%5+1] is equal to [2]> <when number of [Temp2] is equal to [23]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>", "Gain a free [n3] [in capital] <if [Announcing the commencement of the World Congress] is constructed> <when number of [abs([turns]*[[improved] Tiles]-[[Forest] Tiles])%5+1] is equal to [3]> <when number of [Temp2] is equal to [23]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>", "Gain a free [n3] [in capital] <if [Announcing the commencement of the World Congress] is constructed> <when number of [abs([turns]*[[improved] Tiles]-[[Forest] Tiles])%5+1] is equal to [3]> <when number of [Temp2] is equal to [23]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>", "Gain a free [n4] [in capital] <if [Announcing the commencement of the World Congress] is constructed> <when number of [abs([turns]*[[improved] Tiles]-[[Forest] Tiles])%5+1] is equal to [4]> <when number of [Temp2] is equal to [23]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>", "Gain a free [n5] [in capital] <if [Announcing the commencement of the World Congress] is constructed> <when number of [abs([turns]*[[improved] Tiles]-[[Forest] Tiles])%5+1] is equal to [5]> <when number of [Temp2] is equal to [23]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>",
-    // 循环
-    "Instantly consumes [1] [Temp2] <upon turn end> <when number of [Temp2] is more than [1]> <when [World Conference(Recommended to enable)] Victory is enabled>",
-    "Set [Temp2] to [21] <upon turn end> <when number of [Temp2] is equal to [1]> <when [World Conference(Recommended to enable)] Victory is enabled>",
-    // 随机
-    "Gain a free [n1] [in capital] <if [Announcing the commencement of the World Congress] is constructed> <when number of [abs([turns]*[[improved] Tiles]-[[Forest] Tiles])%5+1] is equal to [1]> <when number of [Temp2] is equal to [3]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>", "Gain a free [n2] [in capital] <if [Announcing the commencement of the World Congress] is constructed> <when number of [abs([turns]*[[improved] Tiles]-[[Forest] Tiles])%5+1] is equal to [2]> <when number of [Temp2] is equal to [3]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>", "Gain a free [n3] [in capital] <if [Announcing the commencement of the World Congress] is constructed> <when number of [abs([turns]*[[improved] Tiles]-[[Forest] Tiles])%5+1] is equal to [3]> <when number of [Temp2] is equal to [3]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>", "Gain a free [n3] [in capital] <if [Announcing the commencement of the World Congress] is constructed> <when number of [abs([turns]*[[improved] Tiles]-[[Forest] Tiles])%5+1] is equal to [3]> <when number of [Temp2] is equal to [3]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>", "Gain a free [n4] [in capital] <if [Announcing the commencement of the World Congress] is constructed> <when number of [abs([turns]*[[improved] Tiles]-[[Forest] Tiles])%5+1] is equal to [4]> <when number of [Temp2] is equal to [3]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>", "Gain a free [n5] [in capital] <if [Announcing the commencement of the World Congress] is constructed> <when number of [abs([turns]*[[improved] Tiles]-[[Forest] Tiles])%5+1] is equal to [5]> <when number of [Temp2] is equal to [3]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>",
-    "Remove [nn] [in all cities] <if [Announcing the commencement of the World Congress] is constructed> <when number of [Temp2] is equal to [15]> <upon turn end> <when [World Conference(Recommended to enable)] Victory is enabled>",
-    
-    // 事件
-    "Triggers a [International Exposition] event <if [n1] is constructed by anybody> <upon turn start> <when number of [Temp2] is equal to [20]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Triggers a [Global Trade Regulations] event <if [n2] is constructed by anybody> <upon turn start> <when number of [Temp2] is equal to [20]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Triggers a [World Military Conference] event <if [n3] is constructed by anybody> <upon turn start> <when number of [Temp2] is equal to [20]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Triggers a [Global Religious Assembly] event <if [n4] is constructed by anybody> <upon turn start> <when number of [Temp2] is equal to [20]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Triggers a [World Humanitarian Summit] event <if [n5] is constructed by anybody> <upon turn start> <when number of [Temp2] is equal to [20]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Triggers a [Voting Results1] event <if [n1] is constructed by anybody> <upon turn start> <when number of [Temp2] is equal to [17]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Triggers a [Voting Results2] event <if [n2] is constructed by anybody> <upon turn start> <when number of [Temp2] is equal to [17]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Triggers a [Voting Results3] event <if [n3] is constructed by anybody> <upon turn start> <when number of [Temp2] is equal to [17]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Triggers a [Voting Results4] event <if [n4] is constructed by anybody> <upon turn start> <when number of [Temp2] is equal to [17]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Triggers a [Voting Results5] event <if [n5] is constructed by anybody> <upon turn start> <when number of [Temp2] is equal to [17]> <when [World Conference(Recommended to enable)] Victory is enabled>",
-    "Instantly consumes [1] [B1] <upon turn start> <when number of [Temp2] is equal to [15]> <when number of [B1] is equal to [1]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Instantly consumes [1] [B2] <upon turn start> <when number of [Temp2] is equal to [15]> <when number of [B2] is equal to [1]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Instantly consumes [1] [B3] <upon turn start> <when number of [Temp2] is equal to [15]> <when number of [B3] is equal to [1]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Instantly provides [1] [BR] <upon turn start> <when number of [Temp2] is equal to [15]> <when [World Conference(Recommended to enable)] Victory is enabled>", "Instantly consumes [1] [BR] <upon turn end> <when number of [Temp2] is equal to [14]> <when number of [BR] is equal to [1]> <when [World Conference(Recommended to enable)] Victory is enabled>",
-    
-
-    
-    
-    
-    
-    
-    "Requires establishing embassies to conduct advanced diplomacy",
-    // 宗教
-    "[-15]% construction time for [All] improvements <after adopting [Miracle]>"
-    "[1] free [Missionary] units appear <after adopting [Religious Expansion]> <upon founding a Religion>",
-    "[1] free [Missionary] units appear <upon adopting [Religious Unity]>",
-    "[+1 Gold] <for every [20] [Faith]> <before turn number [51]><after adopting [Tithes]>", "[+1 Gold] <for every [30] [Faith]> <after turn number [50]><after adopting [Tithes]>"
-    
-    
+     
     // 地狱模式
     "Triggers a [Select Hell Difficulty Debuff] event <on [Hell] difficulty> <upon constructing [Palace]> <for [Human player] Civilizations>",
     "[+100]% Strength <for [AI player] Civilizations> <vs [Barbarian] units> <if [Totally Isolated] is constructed by anybody>", 
@@ -87,9 +35,7 @@
     // 修正
     "[-50]% construction time for [All] improvements <for [AI player] Civilizations>",
     "[+1]% Culture cost of adopting new Policies <for every [Adopted [All] Policies]>",
-    "[+100]% Gold from Great Merchant trade missions",
-    
-    
+    "[+100]% Gold from Great Merchant trade missions"    
     // 快乐惩罚
     "[-50]% growth [in all cities] <when number of [Happiness] is between [-10] and [-1]>",
     "[-75]% growth [in all cities] <when number of [Happiness] is between [-15] and [-11]>",
