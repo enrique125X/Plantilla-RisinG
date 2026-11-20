@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Warfare Aversion Level",
+    "resourceType": "Strategic",
+    "isStockpile": true,
+    "uniques": [
+      "Not shown on world screen",
+      "Cannot be traded"
+    ]
+  }
+]
