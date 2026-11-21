@@ -1,11 +1,12 @@
 -- scripts/aversion_belica.lua
 -- Arquitectura Ultraoptimizada 100% compatible con UncivCN estándar (sin editar Kotlin):
---   1) Descomposición binaria O(log N) en 7 edificios ocultos (1..64):
---      elimina por completo los bucles repeat(N/4) de Unique.forEachMultiplied().
---   2) Dirty-Sync O(1): si floor(nivel/4) y el estado de rebeldía no cambian, retorna al instante
---      sin tocar getCapital(), sin addBuilding/removeBuilding ni reconstruir builtBuildingUniqueMap.
---   3) Retiro antes de inserción: reduce builtBuildingUniqueMap antes de ejecutar addBuilding().
---   4) Persistencia nativa en Civilization.variables (partidas guardadas y multijugador).
+--   1) Descomposición binaria O(log N) en 6 edificios ocultos (1..32):
+--      elimina por completo Unique.forEachMultiplied() y omite <when above [23]> en Nivel 1.
+--   2) Operaciones bit a bit con bit32 (Bit32Lib de LuaScriptManager.kt):
+--      bit32.bxor/band y bit32.rshift(nivel, 2) sin división flotante ni math.min().
+--   3) Dirty-Sync O(1): si el factor de escalado y la rebeldía no cambian (75% de turnos en guerra),
+--      retorna al instante sin tocar getCapital() ni reconstruir builtBuildingUniqueMap.
+--   4) Retiro antes de inserción y persistencia nativa en Civilization.variables.
 
 local VAR_INDICE = "AversionBelica_Indice"
 local VAR_MASCARA_APLICADA = "AversionBelica_MascaraAplicada"
@@ -15,22 +16,31 @@ local DELTA_BAJA_PROPIA = 2
 local DELTA_BAJA_ENEMIGA = -1
 local ALIVIO_CONQUISTA_CIUDAD = 10
 local RECUPERACION_BASE_PAZ = 1
-local MAX_INDICE = 500
+local MAX_INDICE = 252
 
-local MIN_UMBRAL_PENALIZACION = 10
-local UMBRAL_REBELION = 70
+local MIN_UMBRAL_PENALIZACION = 23
+local UMBRAL_REBELION = 55
 local DIVISOR_ESCALADO = 4
-local MAX_MULTIPLICADOR = 127
-local BIT_REBEL = 128
+local MAX_MULTIPLICADOR = 63
+local BIT_REBEL = 64
 
-local BIT_EDIFICIOS = { "AversionBelica_Bit_1", "AversionBelica_Bit_2", "AversionBelica_Bit_4", "AversionBelica_Bit_8", "AversionBelica_Bit_16", "AversionBelica_Bit_32", "AversionBelica_Bit_64" }
+local BIT_MASKS = { 1, 2, 4, 8, 16, 32 }
+local BIT_EDIFICIOS = { "AversionBelica_Bit_1", "AversionBelica_Bit_2", "AversionBelica_Bit_4", "AversionBelica_Bit_8", "AversionBelica_Bit_16", "AversionBelica_Bit_32" }
 local NUM_BITS = #BIT_EDIFICIOS
 local EDIFICIO_INSURGENCIA = "AversionBelica_Insurgencia"
 
+local band = bit32.band
+local bxor = bit32.bxor
+local rshift = bit32.rshift
+
 local function sincronizarEfectosCapital(civ, nivel, forzarVerificacion)
-  local objetivoP = (nivel > MIN_UMBRAL_PENALIZACION) and math.min(MAX_MULTIPLICADOR, math.floor(nivel / DIVISOR_ESCALADO)) or 0
+  local objetivoP = 0
+  if nivel > MIN_UMBRAL_PENALIZACION then
+    objetivoP = rshift(nivel, 2)
+    if objetivoP > MAX_MULTIPLICADOR then objetivoP = MAX_MULTIPLICADOR end
+  end
   local objetivoRebel = (UMBRAL_REBELION ~= nil and nivel > UMBRAL_REBELION) and 1 or 0
-  local objetivoMascara = objetivoP + objetivoRebel * BIT_REBEL
+  local objetivoMascara = objetivoP + (objetivoRebel == 1 and BIT_REBEL or 0)
   local mascaraActual = civ.getVariable(VAR_MASCARA_APLICADA)
 
   if not forzarVerificacion and objetivoMascara == mascaraActual then
@@ -46,12 +56,10 @@ local function sincronizarEfectosCapital(civ, nivel, forzarVerificacion)
   end
 
   if forzarVerificacion then
-    local rem = objetivoP
     local paraAnadir = {}
     local nAnadir = 0
     for i = 1, NUM_BITS do
-      local bit = rem % 2
-      local debe = bit == 1
+      local debe = band(objetivoP, BIT_MASKS[i]) ~= 0
       local edificio = BIT_EDIFICIOS[i]
       local tiene = capital.hasBuilding(edificio)
       if not debe and tiene then
@@ -60,7 +68,6 @@ local function sincronizarEfectosCapital(civ, nivel, forzarVerificacion)
         nAnadir = nAnadir + 1
         paraAnadir[nAnadir] = edificio
       end
-      rem = (rem - bit) * 0.5
     end
     for i = 1, nAnadir do
       capital.addBuilding(paraAnadir[i])
@@ -76,25 +83,21 @@ local function sincronizarEfectosCapital(civ, nivel, forzarVerificacion)
       end
     end
   else
-    local oldP = mascaraActual % BIT_REBEL
-    if oldP ~= objetivoP then
-      local rOld = oldP
-      local rNew = objetivoP
+    local oldP = band(mascaraActual, BIT_REBEL - 1)
+    local diff = bxor(oldP, objetivoP)
+    if diff ~= 0 then
       local paraAnadir = {}
       local nAnadir = 0
       for i = 1, NUM_BITS do
-        local bOld = rOld % 2
-        local bNew = rNew % 2
-        if bOld ~= bNew then
-          if bOld == 1 then
-            capital.removeBuilding(BIT_EDIFICIOS[i])
-          else
+        local mask = BIT_MASKS[i]
+        if band(diff, mask) ~= 0 then
+          if band(objetivoP, mask) ~= 0 then
             nAnadir = nAnadir + 1
             paraAnadir[nAnadir] = BIT_EDIFICIOS[i]
+          else
+            capital.removeBuilding(BIT_EDIFICIOS[i])
           end
         end
-        rOld = (rOld - bOld) * 0.5
-        rNew = (rNew - bNew) * 0.5
       end
       for i = 1, nAnadir do
         capital.addBuilding(paraAnadir[i])
@@ -102,7 +105,7 @@ local function sincronizarEfectosCapital(civ, nivel, forzarVerificacion)
     end
 
     if UMBRAL_REBELION ~= nil then
-      local estabaRebel = mascaraActual >= BIT_REBEL
+      local estabaRebel = band(mascaraActual, BIT_REBEL) ~= 0
       local debeRebel = objetivoRebel == 1
       if estabaRebel and not debeRebel then
         capital.removeBuilding(EDIFICIO_INSURGENCIA)
