@@ -1,13 +1,65 @@
 {
-  "name": "Global Uniques",
+  "[
+  {
+    "name": "War Aversion",
+    "category": "Game Mechanics",
+    "civilopediaText": [
+      {
+        "text": "War Aversion tracks war exhaustion in Major Civilizations (City-States and Barbarians are exempt)."
+      },
+      {
+        "separator": true
+      },
+      {
+        "text": "1. Accumulation & Relief",
+        "header": 3
+      },
+      {
+        "text": "War turn: +1 | Friendly unit lost: +2",
+        "indent": 1
+      },
+      {
+        "text": "Peace turn: -1 | Enemy defeated: -1 | City conquered (>10): -10",
+        "indent": 1
+      },
+      {
+        "separator": true
+      },
+      {
+        "text": "2. Scaling & Thresholds",
+        "header": 3
+      },
+      {
+        "text": "Every 4 points adds 1 scaling step (floor(level / 4)). Capped at 252 points."
+      },
+      {
+        "text": "From 24 (>23): -2% Gold per 4 pts.",
+        "indent": 1
+      },
+      {
+        "text": "From 36 (>35): +2% Unhappiness from Population per 4 pts.",
+        "indent": 1
+      },
+      {
+        "text": "From 56 (>55): -2% Production, -2% Faith, Rebel spawns per 4 pts.",
+        "indent": 1
+      },
+      {
+        "text": "From 100 (>99): -2% Culture, -2% Science, -2% Military Strength per 4 pts.",
+        "indent": 1
+      }
+    ]
+  }
+]
+": "Global Uniques",
   "uniques": [
-    "Trigger the function [aversionBelica_sumarTurnoGuerra] with [] <for [Major] Civilizations> <upon turn start> <when at war> <when below [500] [AversionBelica_Indice]>",
+    "Trigger the function [aversionBelica_sumarTurnoGuerra] with [] <for [Major] Civilizations> <upon turn start> <when at war> <when below [252] [AversionBelica_Indice]>",
     "Trigger the function [aversionBelica_aliviarTurnoPaz] with [] <for [Major] Civilizations> <upon turn start> <when not at war> <when above [0] [AversionBelica_Indice]>",
     "Trigger the function [aversionBelica_alConquistarCiudad] with [] <for [Major] Civilizations> <upon conquering a city> <when above [10] [AversionBelica_Indice]>",
-    "Trigger the function [aversionBelica_resincronizarCapital] with [] <for [Major] Civilizations> <upon losing a city> <when above [10] [AversionBelica_Indice]>"
+    "Trigger the function [aversionBelica_resincronizarCapital] with [] <for [Major] Civilizations> <upon losing a city> <when above [23] [AversionBelica_Indice]>"
   ],
   "unitUniques": [
-    "Trigger the function [aversionBelica_alPerderUnidad] with [] <for [Major] Civilizations> <upon being defeated> <when below [500] [AversionBelica_Indice]>",
+    "Trigger the function [aversionBelica_alPerderUnidad] with [] <for [Major] Civilizations> <upon being defeated> <when below [252] [AversionBelica_Indice]>",
     "Trigger the function [aversionBelica_alMatarEnemigo] with [] <for [Major] Civilizations> <upon defeating a [All] unit> <when above [0] [AversionBelica_Indice]>"
   ]
 }
