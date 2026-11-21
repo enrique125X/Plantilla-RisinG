@@ -1,9 +1,18 @@
 [
   {
-    "name": "Warfare Aversion Level",
+    "name": "AversionBelica_Indice",
     "scope": "Civ",
     "default": 0,
     "min": 0,
-    "isDisplay": true
+    "isDisplay": true,
+    "max": 500
+  },
+  {
+    "name": "AversionBelica_MascaraAplicada",
+    "scope": "Civ",
+    "default": 0,
+    "min": 0,
+    "max": 255,
+    "isDisplay": false
   }
 ]
