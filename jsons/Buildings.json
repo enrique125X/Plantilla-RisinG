@@ -1,0 +1,140 @@
+[
+  {
+    "name": "AversionBelica_Bit_1",
+    "cost": -1,
+    "uniques": [
+      "Unbuildable",
+      "Unsellable",
+      "Hidden from city screen",
+      "Will not be displayed in Civilopedia",
+      "Destroyed when the city is captured",
+      "[-1]% [Gold] <when above [10] [AversionBelica_Indice]>",
+      "[+1]% Unhappiness from [Population] [in all cities] <when above [30] [AversionBelica_Indice]>",
+      "[-1]% [Production] <when above [50] [AversionBelica_Indice]>",
+      "[-1]% [Faith] <when above [70] [AversionBelica_Indice]>",
+      "[-1]% [Culture] <when above [100] [AversionBelica_Indice]>",
+      "[-1]% [Science] <when above [100] [AversionBelica_Indice]>",
+      "[-1]% Strength <for [Military] units> <when above [100] [AversionBelica_Indice]>"
+    ]
+  },
+  {
+    "name": "AversionBelica_Bit_2",
+    "cost": -1,
+    "uniques": [
+      "Unbuildable",
+      "Unsellable",
+      "Hidden from city screen",
+      "Will not be displayed in Civilopedia",
+      "Destroyed when the city is captured",
+      "[-2]% [Gold] <when above [10] [AversionBelica_Indice]>",
+      "[+2]% Unhappiness from [Population] [in all cities] <when above [30] [AversionBelica_Indice]>",
+      "[-2]% [Production] <when above [50] [AversionBelica_Indice]>",
+      "[-2]% [Faith] <when above [70] [AversionBelica_Indice]>",
+      "[-2]% [Culture] <when above [100] [AversionBelica_Indice]>",
+      "[-2]% [Science] <when above [100] [AversionBelica_Indice]>",
+      "[-2]% Strength <for [Military] units> <when above [100] [AversionBelica_Indice]>"
+    ]
+  },
+  {
+    "name": "AversionBelica_Bit_4",
+    "cost": -1,
+    "uniques": [
+      "Unbuildable",
+      "Unsellable",
+      "Hidden from city screen",
+      "Will not be displayed in Civilopedia",
+      "Destroyed when the city is captured",
+      "[-4]% [Gold] <when above [10] [AversionBelica_Indice]>",
+      "[+4]% Unhappiness from [Population] [in all cities] <when above [30] [AversionBelica_Indice]>",
+      "[-4]% [Production] <when above [50] [AversionBelica_Indice]>",
+      "[-4]% [Faith] <when above [70] [AversionBelica_Indice]>",
+      "[-4]% [Culture] <when above [100] [AversionBelica_Indice]>",
+      "[-4]% [Science] <when above [100] [AversionBelica_Indice]>",
+      "[-4]% Strength <for [Military] units> <when above [100] [AversionBelica_Indice]>"
+    ]
+  },
+  {
+    "name": "AversionBelica_Bit_8",
+    "cost": -1,
+    "uniques": [
+      "Unbuildable",
+      "Unsellable",
+      "Hidden from city screen",
+      "Will not be displayed in Civilopedia",
+      "Destroyed when the city is captured",
+      "[-8]% [Gold] <when above [10] [AversionBelica_Indice]>",
+      "[+8]% Unhappiness from [Population] [in all cities] <when above [30] [AversionBelica_Indice]>",
+      "[-8]% [Production] <when above [50] [AversionBelica_Indice]>",
+      "[-8]% [Faith] <when above [70] [AversionBelica_Indice]>",
+      "[-8]% [Culture] <when above [100] [AversionBelica_Indice]>",
+      "[-8]% [Science] <when above [100] [AversionBelica_Indice]>",
+      "[-8]% Strength <for [Military] units> <when above [100] [AversionBelica_Indice]>"
+    ]
+  },
+  {
+    "name": "AversionBelica_Bit_16",
+    "cost": -1,
+    "uniques": [
+      "Unbuildable",
+      "Unsellable",
+      "Hidden from city screen",
+      "Will not be displayed in Civilopedia",
+      "Destroyed when the city is captured",
+      "[-16]% [Gold] <when above [10] [AversionBelica_Indice]>",
+      "[+16]% Unhappiness from [Population] [in all cities] <when above [30] [AversionBelica_Indice]>",
+      "[-16]% [Production] <when above [50] [AversionBelica_Indice]>",
+      "[-16]% [Faith] <when above [70] [AversionBelica_Indice]>",
+      "[-16]% [Culture] <when above [100] [AversionBelica_Indice]>",
+      "[-16]% [Science] <when above [100] [AversionBelica_Indice]>",
+      "[-16]% Strength <for [Military] units> <when above [100] [AversionBelica_Indice]>"
+    ]
+  },
+  {
+    "name": "AversionBelica_Bit_32",
+    "cost": -1,
+    "uniques": [
+      "Unbuildable",
+      "Unsellable",
+      "Hidden from city screen",
+      "Will not be displayed in Civilopedia",
+      "Destroyed when the city is captured",
+      "[-32]% [Gold] <when above [10] [AversionBelica_Indice]>",
+      "[+32]% Unhappiness from [Population] [in all cities] <when above [30] [AversionBelica_Indice]>",
+      "[-32]% [Production] <when above [50] [AversionBelica_Indice]>",
+      "[-32]% [Faith] <when above [70] [AversionBelica_Indice]>",
+      "[-32]% [Culture] <when above [100] [AversionBelica_Indice]>",
+      "[-32]% [Science] <when above [100] [AversionBelica_Indice]>",
+      "[-32]% Strength <for [Military] units> <when above [100] [AversionBelica_Indice]>"
+    ]
+  },
+  {
+    "name": "AversionBelica_Bit_64",
+    "cost": -1,
+    "uniques": [
+      "Unbuildable",
+      "Unsellable",
+      "Hidden from city screen",
+      "Will not be displayed in Civilopedia",
+      "Destroyed when the city is captured",
+      "[-64]% [Gold] <when above [10] [AversionBelica_Indice]>",
+      "[+64]% Unhappiness from [Population] [in all cities] <when above [30] [AversionBelica_Indice]>",
+      "[-64]% [Production] <when above [50] [AversionBelica_Indice]>",
+      "[-64]% [Faith] <when above [70] [AversionBelica_Indice]>",
+      "[-64]% [Culture] <when above [100] [AversionBelica_Indice]>",
+      "[-64]% [Science] <when above [100] [AversionBelica_Indice]>",
+      "[-64]% Strength <for [Military] units> <when above [100] [AversionBelica_Indice]>"
+    ]
+  },
+  {
+    "name": "AversionBelica_Insurgencia",
+    "cost": -1,
+    "uniques": [
+      "Unbuildable",
+      "Unsellable",
+      "Hidden from city screen",
+      "Will not be displayed in Civilopedia",
+      "Destroyed when the city is captured",
+      "Rebel units may spawn"
+    ]
+  }
+]
