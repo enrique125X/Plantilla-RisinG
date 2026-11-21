@@ -1,18 +1,13 @@
 {
   "name": "Global Uniques",
   "uniques": [
-    "Trigger the function [onTurnStart] with [] <upon turn start>",
-    "Trigger the function [onCityConquered] with [] <upon conquering a city>",
-    "[-1]% [Gold] <for every [3] [Warfare Aversion Level]> <when above [10] [Warfare Aversion Level]>",
-    "[+1]% Unhappiness from [Population] [in all cities] <for every [3] [Warfare Aversion Level]> <when above [30] [Warfare Aversion Level]>",
-    "[-1]% [Production] [in all cities] <for every [3] [Warfare Aversion Level]> <when above [50] [Warfare Aversion Level]>",
-    "Rebel units may spawn <when above [70] [Warfare Aversion Level]>",
-    "[-1]% [Faith] [in all cities] <for every [3] [Warfare Aversion Level]> <when above [70] [Warfare Aversion Level]>",
-    "[-1]% [Culture] [in all cities] <for every [3] [Warfare Aversion Level]> <when above [100] [Warfare Aversion Level]>",
-    "[-1]% [Science] [in all cities] <for every [3] [Warfare Aversion Level]> <when above [100] [Warfare Aversion Level]>",
-    "[-1]% Strength <for [Military] units> <for every [3] [Warfare Aversion Level]> <when above [100] [Warfare Aversion Level]>"
+    "Trigger the function [aversionBelica_sumarTurnoGuerra] with [] <for [Major] Civilizations> <upon turn start> <when at war> <when below [500] [AversionBelica_Indice]>",
+    "Trigger the function [aversionBelica_aliviarTurnoPaz] with [] <for [Major] Civilizations> <upon turn start> <when not at war> <when above [0] [AversionBelica_Indice]>",
+    "Trigger the function [aversionBelica_alConquistarCiudad] with [] <for [Major] Civilizations> <upon conquering a city> <when above [10] [AversionBelica_Indice]>",
+    "Trigger the function [aversionBelica_resincronizarCapital] with [] <for [Major] Civilizations> <upon losing a city> <when above [10] [AversionBelica_Indice]>"
   ],
   "unitUniques": [
-    "Trigger the function [onUnitDefeated] with [] <upon being defeated>"
+    "Trigger the function [aversionBelica_alPerderUnidad] with [] <for [Major] Civilizations> <upon being defeated> <when below [500] [AversionBelica_Indice]>",
+    "Trigger the function [aversionBelica_alMatarEnemigo] with [] <for [Major] Civilizations> <upon defeating a [All] unit> <when above [0] [AversionBelica_Indice]>"
   ]
 }
