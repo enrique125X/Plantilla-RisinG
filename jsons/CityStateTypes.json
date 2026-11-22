@@ -123,12 +123,12 @@
     "name": "Manila",
     "friendBonusUniques": [
       "[+3 Food] [in capital]",
-      "[+1]% [Food] from every [Seaside Building]"
+//      "[+1]% [Food] from every [Seaside Building]"
     ],
     "allyBonusUniques": [
       "[+3 Food] [in capital]",
       "[+3]% [Food] [in all cities]",
-      "[+2]% [Food] from every [Seaside Building]"
+//      "[+2]% [Food] from every [Seaside Building]"
     ],
     "color": [56, 255, 112]
   },
@@ -314,7 +314,7 @@
     ],
     "allyBonusUniques": [
       "Provides military units every ≈[5] turns <(modified by game speed)>",
-      "[+12]% Strength <for [Mobile] units>"
+      "[+12]% Strength <for [Mounted] units>"
     ],
     "color": [255, 0, 0]
   },
