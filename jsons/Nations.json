@@ -1,4 +1,4 @@
-
+[
 {
 		"name": "Brussels",
 		"adjective": ["Bruxellois"],
@@ -373,3 +373,4 @@
 		"uniques": ["[+100]% Production when constructing [All] buildings [in all cities]"]
 		"cities": ["Auckland"]
   }
+]
