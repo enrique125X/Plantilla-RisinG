@@ -1,0 +1,931 @@
+[
+	{
+		"name": "Buffalo Horns",
+		"uniques": [
+			"[+1] Movement",
+			"[+10]% Strength <when defending> <vs [Ranged] units>",
+			"[+25]% to Flank Attack bonuses",
+			"Only available <for [Zulu] Civilizations>",
+			"[+100]% weight to this choice for AI decisions"
+		],
+		"civilopediaText": [
+			{
+				"text": "Requires [Ikanda] to be built in the city",
+				"link": "Building/Ikanda"
+			}
+		]
+	},
+	{
+		"name": "Buffalo Chest",
+		"uniques": [
+			"[+10]% Strength <when fighting in [Open terrain] tiles>",
+			"[+10]% Strength <when defending> <vs [Ranged] units>",
+			"[+25]% to Flank Attack bonuses",
+			"Only available <for [Zulu] Civilizations>",
+			"[+100]% weight to this choice for AI decisions"
+		],
+		"prerequisites": [
+			"Buffalo Horns"
+		],
+		"unitTypes": [
+			"Sword"
+		]
+	},
+	{
+		"name": "Buffalo Loins",
+		"uniques": [
+			"[+10]% Strength",
+			"[+10]% Strength <when defending> <vs [Ranged] units>",
+			"[+25]% to Flank Attack bonuses",
+			"Only available <for [Zulu] Civilizations>",
+			"[+100]% weight to this choice for AI decisions"
+		],
+		"prerequisites": [
+			"Buffalo Chest"
+		],
+		"unitTypes": [
+			"Sword"
+		]
+	},
+	{
+		"name": "Mystic Blade",
+		"uniques": [
+			"Comment [Provides a randomly selected special promotion after the first battle]",
+			"Triggers a [Mystic Blade] event <hidden from users>"
+		],
+		"civilopediaText": [
+			{
+				"text": "Invulnerability",
+				"link": "Promotion/Invulnerability"
+			},
+			{
+				"text": "Sneak Attack",
+				"link": "Promotion/Sneak Attack"
+			},
+			{
+				"text": "Heroism",
+				"link": "Promotion/Heroism"
+			},
+			{
+				"text": "Ambition",
+				"link": "Promotion/Ambition"
+			},
+			{
+				"text": "Restlessness",
+				"link": "Promotion/Restlessness"
+			},
+			{
+				"text": "Recruitment",
+				"link": "Promotion/Recruitment"
+			},
+			{
+				"text": "Enemy Blade",
+				"link": "Promotion/Enemy Blade"
+			},
+			{
+				"text": "Evil Spirits",
+				"link": "Promotion/Evil Spirits"
+			},
+			{
+				"separator": true
+			},
+			{
+				"text": "Kris Swordsman",
+				"link": "Unit/Kris Swordsman"
+			}
+		],
+		"innerColor": [
+			88,
+			196,
+			221
+		]
+	},
+	{
+		"name": "Invulnerability",
+		"uniques": [
+			"[+30]% Strength <when defending>",
+			"[+20] HP when healing"
+		],
+		"prerequisites": [
+			"Mystic Blade"
+		],
+		"innerColor": [
+			88,
+			196,
+			221
+		]
+	},
+	{
+		"name": "Sneak Attack",
+		"uniques": [
+			"[+50]% to Flank Attack bonuses"
+		],
+		"prerequisites": [
+			"Mystic Blade"
+		],
+		"innerColor": [
+			88,
+			196,
+			221
+		]
+	},
+	{
+		"name": "Heroism",
+		"uniques": [
+			"[+15]% Strength bonus for [Military] units within [2] tiles"
+		],
+		"prerequisites": [
+			"Mystic Blade"
+		],
+		"innerColor": [
+			88,
+			196,
+			221
+		]
+	},
+	{
+		"name": "Ambition",
+		"uniques": [
+			"[+50]% Strength <when attacking>",
+			"[-20]% Strength <when defending>"
+		],
+		"prerequisites": [
+			"Mystic Blade"
+		],
+		"innerColor": [
+			88,
+			196,
+			221
+		]
+	},
+	{
+		"name": "Restlessness",
+		"uniques": [
+			"[1] additional attacks per turn",
+			"[+1] Movement"
+		],
+		"prerequisites": [
+			"Mystic Blade"
+		],
+		"innerColor": [
+			88,
+			196,
+			221
+		]
+	},
+	{
+		"name": "Recruitment",
+		"uniques": [
+			"[This Unit] heals [50] HP <upon defeating a [{non-[Barbarian]} {Military}] unit>"
+		],
+		"prerequisites": [
+			"Mystic Blade"
+		],
+		"innerColor": [
+			88,
+			196,
+			221
+		]
+	},
+	{
+		"name": "Enemy Blade",
+		"uniques": [
+			"[This Unit] takes [20] damage <upon ending a turn in a [Enemy Land] tile>"
+		],
+		"prerequisites": [
+			"Mystic Blade"
+		],
+		"innerColor": [
+			178,
+			52,
+			51
+		]
+	},
+	{
+		"name": "Evil Spirits",
+		"uniques": [
+			"[-10]% Strength <when attacking>",
+			"[-30]% Strength <when defending>"
+		],
+		"prerequisites": [
+			"Mystic Blade"
+		],
+		"innerColor": [
+			178,
+			52,
+			51
+		]
+	},
+	{
+		"name": "Paradrop",
+		"uniques": [
+			"Comment [May Paradrop to [Land] tiles up to [9] tiles away] <in [{Friendly} {Land}] tiles>",
+			"May Paradrop to [Land] tiles up to [9] tiles away <in [{Friendly} {Land}] tiles> <for units without [Skyranger]> <hidden from users>"
+		]
+	},
+	{
+		"name": "Skyranger",
+		"uniques": [
+			"Comment [May Paradrop to [Land] tiles up to [40] tiles away] <in [{Friendly} {Land}] tiles>",
+			"May Paradrop to [Land] tiles up to [40] tiles away <in [{Friendly} {Land}] tiles> <for units without [Paradrop]> <hidden from users>",
+			"May Paradrop to [Land] tiles up to [49] tiles away <in [{Friendly} {Land}] tiles> <for units with [Paradrop]> <hidden from users>"
+		]
+	},
+	{
+		"name": "Altitude Training",
+		"uniques": [
+			"Double movement in [Hill]",
+			"[+10]% Strength <when fighting in [Hill] tiles>"
+		]
+	},
+	{
+		"name": "Lightning Warfare",
+		"uniques": [
+			"Ignores Zone of Control",
+			"[+15]% Strength <when attacking>",
+			"[+1] Movement"
+		],
+		"civilopediaText": [
+			{
+				"text": "Requires [Lightning Warfare]",
+				"link": "Policy/Lightning Warfare"
+			}
+		]
+	},
+	{
+		"name": "[Caravansary] ability",
+		"uniques": [
+			"[+10]% Gold from Great Merchant trade missions",
+			"[1] Movement",
+			"Comment [Double influence when conducting a [Trade Route] in City-States]"
+		],
+		"civilopediaText": [
+			{
+				"text": "Caravan",
+				"link": "Unit/Caravan"
+			}
+		]
+	},
+	{
+		"name": "[Harbor] ability",
+		"uniques": [
+			"[+5]% Gold from Great Merchant trade missions",
+			"[+2] Movement",
+			"Comment [Double influence when conducting a [Trade Route] in City-States]"
+		],
+		"civilopediaText": [
+			{
+				"text": "Cargo Ship",
+				"link": "Unit/Cargo Ship"
+			}
+		]
+	},
+	{
+		"name": "The Great Warpath",
+		"uniques": [
+			"Double movement in [Jungle]",
+			"Double movement in [Forest]",
+			"Only available <for [Iroquois] Civilizations>",
+			"This Promotion is free <hidden from users>"
+		]
+	},
+	{
+		"name": "Foreign Lands Bonus",
+		"uniques": [
+			"[+20]% Strength <when fighting in [Foreign Land] tiles>"
+		],
+		"innerColor": [
+			253,
+			228,
+			2
+		]
+	},
+	{
+		"name": "City Plunder",
+		"uniques": [
+			"Earn [100]% of the damage done to [City] units as [Gold]"
+		]
+	},
+	{
+		"name": "No movement cost to pillage",
+		"uniques": [
+			"No movement cost to pillage"
+		]
+	},
+	{
+		"name": "Golden Age from Victories",
+		"uniques": [
+			"Earn [100]% of killed [Military] unit's [Strength] as [Golden Age points]"
+		]
+	},
+	{
+		"name": "Heavy Charge",
+		"uniques": [
+			"[+25]% Strength <when attacking>"
+		]
+	},
+	{
+		"name": "Homeland Guardian",
+		"uniques": [
+			"[+25]% Strength <when fighting in [Friendly Land] tiles>"
+		]
+	},
+	{
+		"name": "Desert Warrior",
+		"uniques": [
+			"[+50]% Strength <when fighting in [Desert] tiles>"
+		]
+	},
+	{
+		"name": "Full Moon Striker",
+		"uniques": [
+			"[1] Movement"
+		]
+	},
+	{
+		"name": "[Pathfinder] ability",
+		"uniques": [
+			"[This Unit] is destroyed",
+			"Free [Pathfinder] appears",
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "Native Tongue",
+		"uniques": [
+			"Comment [May choose benefit when discovering [Ancient ruins]]",
+			"Triggers a [Native Tongue] event <upon entering a [Ancient ruins] tile> <hidden from users>",
+			"Triggers a [Native Tongue Counter] event <upon turn end> <for [non-[Pathfinder]] units> <hidden from users>",
+			"Triggers a [Native Tongue Counter] event <upon turn end> <for [non-[Pathfinder]] units> <hidden from users>",
+			"Triggers a [Native Tongue Counter] event <upon turn end> <for [non-[Pathfinder]] units> <hidden from users>",
+			"[This Unit] loses the [Native Tongue] promotion <upon turn end> <for [non-[Pathfinder]] units> <hidden from users>"
+		],
+		"civilopediaText": [
+			{
+				"text": "Ancient ruins",
+				"link": "Improvement/Ancient ruins"
+			},
+			{
+				"text": "The same reward can't be chosen again for the next two ruins"
+			}
+		]
+	},
+	{
+		"name": "[Native Tongue] [discover cultural artifacts] I",
+		"prerequisites": [
+			"Native Tongue"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [squatters willing to work for you] I",
+		"prerequisites": [
+			"Native Tongue"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [squatters wishing to settle under your rule] I",
+		"prerequisites": [
+			"Native Tongue"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [your exploring unit receives training] I",
+		"prerequisites": [
+			"Native Tongue"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [survivors (adds population to a city)] I",
+		"prerequisites": [
+			"Native Tongue"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [a stash of gold] I",
+		"prerequisites": [
+			"Native Tongue"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [discover a lost technology] I",
+		"prerequisites": [
+			"Native Tongue"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [reveal nearby Barbarian camps] I",
+		"prerequisites": [
+			"Native Tongue"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [find a crudely-drawn map] I",
+		"prerequisites": [
+			"Native Tongue"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [discover holy symbols] I",
+		"prerequisites": [
+			"Native Tongue"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [an ancient prophecy] I",
+		"prerequisites": [
+			"Native Tongue"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [discover cultural artifacts] II",
+		"prerequisites": [
+			"[Native Tongue] [discover cultural artifacts] I"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [squatters willing to work for you] II",
+		"prerequisites": [
+			"[Native Tongue] [squatters willing to work for you] I"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [squatters wishing to settle under your rule] II",
+		"prerequisites": [
+			"Native Tongue"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [your exploring unit receives training] II",
+		"prerequisites": [
+			"[Native Tongue] [your exploring unit receives training] I"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [survivors (adds population to a city)] II",
+		"prerequisites": [
+			"[Native Tongue] [survivors (adds population to a city)] I"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [a stash of gold] II",
+		"prerequisites": [
+			"[Native Tongue] [a stash of gold] I"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [discover a lost technology] II",
+		"prerequisites": [
+			"[Native Tongue] [discover a lost technology] I"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [reveal nearby Barbarian camps] II",
+		"prerequisites": [
+			"[Native Tongue] [reveal nearby Barbarian camps] I"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [find a crudely-drawn map] II",
+		"prerequisites": [
+			"[Native Tongue] [find a crudely-drawn map] I"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [discover holy symbols] II",
+		"prerequisites": [
+			"[Native Tongue] [discover holy symbols] I"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "[Native Tongue] [an ancient prophecy] II",
+		"prerequisites": [
+			"[Native Tongue] [an ancient prophecy] I"
+		],
+		"uniques": [
+			"Will not be displayed in Civilopedia"
+		]
+	},
+	{
+		"name": "Sapper",
+		"uniques": [
+			"[+50]% Strength bonus for [Land] units within [2] tiles <when attacking> <vs cities>",
+			"[This Unit] loses the [Sapper] promotion <upon turn end> <in tiles not adjacent to [City center] tiles>",
+			"[This Unit] loses the [Sapper] promotion <upon turn end> <for [Trebuchet] units> <hidden from users>"
+		],
+		"civilopediaText": [
+			{
+				"text": "Siege Tower",
+				"link": "Unit/Siege Tower"
+			}
+		]
+	},
+	{
+		"name": "Additional Range",
+		"prerequisites": [
+			"Cover I",
+			"Wolfpack III"
+		],
+		"uniques": [
+			"[+1] Range"
+		],
+		"unitTypes": [
+			"Shooter",
+			"Siege",
+			"Ranged Water",
+			"Submarine"
+		],
+		"row": 3,
+		"column": 14
+	},
+	{
+		"name": "Boarding Party I",
+		"uniques": [
+			"[+15]% Strength <vs [Water] units>"
+		],
+		"unitTypes": [
+			"Melee Water"
+		],
+		"row": 1,
+		"column": 37
+	},
+	{
+		"name": "Charge I",
+		"uniques": [
+			"[+15]% Strength <when fighting in [Open terrain] tiles>"
+		],
+		"unitTypes": [
+			"Mobile"
+		],
+		"row": 1,
+		"column": 14
+	},
+	{
+		"name": "Coastal Raider I",
+		"uniques": [
+			"[+20]% Strength <vs cities>",
+			"Earn [33]% of the damage done to [City] units as [Gold]"
+		],
+		"unitTypes": [
+			"Melee Water"
+		],
+		"row": 1,
+		"column": 40
+	},
+	{
+		"name": "Coastal Raider II",
+		"prerequisites": [
+			"Coastal Raider I"
+		],
+		"uniques": [
+			"[+20]% Strength <vs cities>",
+			"Earn [33]% of the damage done to [City] units as [Gold]"
+		],
+		"unitTypes": [
+			"Melee Water"
+		],
+		"row": 1,
+		"column": 41
+	},
+	{
+		"name": "Defend the Motherland",
+		"uniques": [
+			"[+10]% Strength <when fighting in [Friendly Land] tiles>"
+		]
+	},
+	{
+		"name": "Mamluk ability",
+		"uniques": [
+			"[Target Unit] gains the [Movement Damage] status for [2] turn(s) <upon damaging a [Military] unit>"
+		]
+	},
+	{
+		"name": "More Fight More Brave",
+		"uniques": [
+			"Heals [15] damage if it kills a unit",
+			"Can move after attacking"
+		]
+	},
+	{
+		"name": "Pinpoint Bombing I",
+		"uniques": [
+			"[+33]% Strength <vs cities>"
+		],
+		"unitTypes": [
+			"Bomber"
+		],
+		"row": 1,
+		"column": 67
+	},
+	{
+		"name": "Sealift",
+		"prerequisites": [
+			"Wolfpack III"
+		],
+		"uniques": [
+			"May heal outside of friendly territory",
+			"[+15] HP when healing <in [Foreign Land] tiles>"
+		],
+		"unitTypes": [
+			"Melee Water",
+			"Ranged Water",
+			"Submarine"
+		],
+		"row": 3,
+		"column": 10
+	},
+	{
+		"name": "Survivalism I",
+		"uniques": [
+			"[+5] HP when healing <in [Foreign Land] tiles>",
+			"[+25]% Strength <when defending>"
+		],
+		"unitTypes": [
+			"Reconnaissance"
+		],
+		"row": 1,
+		"column": 26
+	},
+	{
+		"name": "Tactical Evasion I",
+		"uniques": [
+			"Damage taken from interception reduced by [25]%"
+		],
+		"unitTypes": [
+			"Bomber"
+		],
+		"row": 2,
+		"column": 68
+	},
+	{
+		"name": "Turk ability",
+		"uniques": [
+			"[Target Unit] takes [6] damage <upon damaging a [Wounded] unit>"
+		]
+	},
+	{
+		"name": "[African Forest Elephant] ability",
+		"uniques": [
+			"[Great General] is earned [100]% faster"
+		]
+	},
+	{
+		"name": "[Andean Army] ability",
+		"uniques": [
+			"Ignores terrain cost",
+			"Can pass through impassable tiles"
+		]
+	},
+	{
+		"name": "[Battering Ram Warrior] ability",
+		"uniques": [
+			"[+33]% Strength <vs cities> <when attacking>"
+		]
+	},
+	{
+		"name": "[Berserker] ability",
+		"uniques": [
+			"Destroys tile improvements when attacking",
+			"Ignores Zone of Control"
+		]
+	},
+	{
+		"name": "[Black Watch] ability",
+		"uniques": [
+			"[+20]% Strength <when fighting in [Rough terrain] tiles>"
+		]
+	},
+	{
+		"name": "[Carolingian Knight] ability",
+		"uniques": [
+			"Earn [20]% of the damage done to [Military] units as [Faith]"
+		]
+	},
+	{
+		"name": "[Chu-Ko-Nu] ability",
+		"uniques": [
+			"[1] additional attacks per turn",
+			"Can move after attacking"
+		]
+	},
+	{
+		"name": "[Companion Cavalry] ability",
+		"uniques": [
+			"[+15]% Strength <when attacking> <when above [90] HP>"
+		]
+	},
+	{
+		"name": "[Conquistador] ability",
+		"uniques": [
+			"[+100]% Strength <when defending> <when [Embarked]>"
+		]
+	},
+	{
+		"name": "[Cossack] ability",
+		"uniques": [
+			"[+25]% Strength <vs [Wounded] units> <when attacking>"
+		]
+	},
+	{
+		"name": "[Elite Cavalry] ability",
+		"uniques": [
+			"[+15]% Strength <when adjacent to a [Great General] unit>"
+		]
+	},
+	{
+		"name": "[Fjelljeger] ability",
+		"uniques": [
+			"[+1] Movement <in [Hill] tiles>"
+		]
+	},
+	{
+		"name": "[Hakkapeliitta] ability",
+		"uniques": [
+			"Transfer Movement to [Great General]",
+			"[+15]% Strength <when stacked with a [Great General] unit>"
+		]
+	},
+	{
+		"name": "[Heavy Spear Cavalry] ability",
+		"uniques": [
+			"[+25]% Strength <vs [Mobile] units>"
+		]
+	},
+	{
+		"name": "[Hussar] ability",
+		"uniques": [
+			"[+50]% to Flank Attack bonuses"
+		]
+	},
+	{
+		"name": "[Hypaspist] ability",
+		"uniques": [
+			"[+75]% to Flank Attack bonuses"
+		]
+	},
+	{
+		"name": "[Impi] ability",
+		"uniques": [
+			"[+50]% XP gained from combat",
+			"[+50]% to Flank Attack bonuses"
+		]
+	},
+	{
+		"name": "[Iron Wall Legion] ability",
+		"uniques": [
+			"Can build [Fort] improvements on tiles",
+			"[+20]% Strength <when defending>"
+		]
+	},
+	{
+		"name": "[Jaguar] ability",
+		"uniques": [
+			// [dropped: blocked token: Bamboo] [+25]% Strength <when fighting in [Bamboo] tiles>
+			// [dropped: blocked token: Bamboo] Double movement in [Bamboo]
+			"[+25]% Strength <when fighting in [Forest] tiles>",
+			"[+25]% Strength <when fighting in [Jungle] tiles>",
+			"Heals [25] damage if it kills a unit",
+			"Double movement in [Forest]",
+			"Double movement in [Jungle]"
+		]
+	},
+	{
+		"name": "[Janissary] ability",
+		"uniques": [
+			"Heals [50] damage if it kills a unit",
+			"[+25]% Strength <when attacking>"
+		]
+	},
+	{
+		"name": "[Keshik] ability",
+		"uniques": [
+			"[Great General] is earned [50]% faster",
+			"[+50]% XP gained from combat"
+		]
+	},
+	{
+		"name": "[Mamluk Cavalry] ability",
+		"uniques": [
+			"[This Unit] heals [20] HP <costs [+20 Gold] stats> <for [1] movement>"
+		]
+	},
+	{
+		"name": "[Miner Corps] ability",
+		"uniques": [
+			"[+20]% Strength <when fighting in [Mine] tiles>"
+		]
+	},
+	{
+		"name": "[Mobile Archer] ability",
+		"uniques": [
+			"Ignores terrain cost"
+		]
+	},
+	{
+		"name": "[Mohawk Warrior] ability",
+		"uniques": [
+			"[+25]% Strength <when fighting in [Enemy Land] tiles>",
+			"[Great General] is earned [50]% faster"
+		]
+	},
+	{
+		"name": "[Persian Immortal] ability",
+		"uniques": [
+			"[+10] HP when healing"
+		]
+	},
+	{
+		"name": "[Red Mirror Horseman] ability",
+		"uniques": [
+			"[+10]% Strength <when adjacent to a [Shooter] unit>"
+		]
+	},
+	{
+		"name": "[Redshirts] ability",
+		"uniques": [
+			"[+15]% Strength <when fighting in [Hill] tiles>"
+		]
+	},
+	{
+		"name": "[Templar Knight] ability",
+		"uniques": [
+			"Prevents spreading of religion to the city it is next to",
+			"Gain [200] [Gold] <(modified by game speed)> <upon being defeated>",
+			"Gain [40] [Faith] <(modified by game speed)> <upon being promoted>"
+		]
+	},
+	{
+		"name": "[Winged Hussar] ability",
+		"uniques": [
+			"Withdraws before melee combat <with [66]% chance>"
+		]
+	},
+	{
+		"name": "[Yin Archer] ability",
+		"uniques": [
+			"[+10]% Strength <when adjacent to a [Mobile] unit>"
+		]
+	}
+]
