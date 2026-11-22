@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Aversión a la Guerra e Inflación",
+    "category": "Mecánicas del Mod",
+    "civilopediaText": [
+      {
+        "text": "Sistemas Macroeconómicos y Bélicos",
+        "header": 3,
+        "color": "#f59e0b"
+      },
+      {
+        "text": "Este mod añade dos indicadores estratégicos por civilización mayor, procesados de forma nativa y sin sobrecarga de rendimiento."
+      },
+      {
+        "separator": true
+      },
+      {
+        "text": "1. Aversión a la Guerra (WarAversion: 0 a 120)",
+        "header": 4,
+        "color": "#ef4444"
+      },
+      {
+        "text": "Turno en guerra: +1  |  Turno en paz: -1"
+      },
+      {
+        "text": "Unidad militar perdida: +2  |  Unidad enemiga derrotada: -1"
+      },
+      {
+        "text": "Ciudad conquistada: -15"
+      },
+      {
+        "text": "Umbrales acumulativos (-2% por cada 6 puntos de aversión):"
+      },
+      {
+        "text": "Desde 24: Penalización progresiva de Oro en todas las ciudades.",
+        "starred": true
+      },
+      {
+        "text": "Desde 48: Se añade penalización de Alimentos en todas las ciudades.",
+        "starred": true
+      },
+      {
+        "text": "Desde 72: Se añade penalización de Producción y posible aparición de unidades rebeldes.",
+        "starred": true
+      },
+      {
+        "text": "Desde 96: Se añaden penalizaciones de Ciencia, Cultura y Fuerza de combate.",
+        "starred": true
+      },
+      {
+        "separator": true
+      },
+      {
+        "text": "2. Inflación y Deflación Mundial (InflationIndex: -50% a +200%)",
+        "header": 4,
+        "color": "#38bdf8"
+      },
+      {
+        "text": "Una vez por ronda mundial se promedia el Oro por turno (GPT) de las últimas 5 muestras de civilizaciones mayores vivas."
+      },
+      {
+        "text": "Por encima del promedio mundial: inflación progresiva (hasta +200%) en compras urbanas y mejora de unidades.",
+        "starred": true
+      },
+      {
+        "text": "Por debajo del promedio mundial: deflación compensatoria (hasta -50% de descuento).",
+        "starred": true
+      },
+      {
+        "text": "Zona neutra (-6% a +6%): precios estándar sin modificadores.",
+        "starred": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "name": "Global Uniques",
+  "uniques": [
+    "Instantly provides [1] [WarAversion] <upon turn start> <for [Major] Civilizations> <when at war> <when below [120] [WarAversion]>",
+    "Instantly consumes [1] [WarAversion] <upon turn start> <for [Major] Civilizations> <when not at war> <when above [0] [WarAversion]>",
+    "Instantly consumes [15] [WarAversion] <upon conquering a city> <for [Major] Civilizations> <when above [0] [WarAversion]>",
+    "[-2]% [Gold] [in all cities] <for [Major] Civilizations> <when above [23] [WarAversion]> <for every [6] [WarAversion]>",
+    "[-2]% [Food] [in all cities] <for [Major] Civilizations> <when above [47] [WarAversion]> <for every [6] [WarAversion]>",
+    "[-2]% [Production] [in all cities] <for [Major] Civilizations> <when above [71] [WarAversion]> <for every [6] [WarAversion]>",
+    "Rebel units may spawn <for [Major] Civilizations> <when above [71] [WarAversion]>",
+    "[-2]% [Science] [in all cities] <for [Major] Civilizations> <when above [95] [WarAversion]> <for every [6] [WarAversion]>",
+    "[-2]% [Culture] [in all cities] <for [Major] Civilizations> <when above [95] [WarAversion]> <for every [6] [WarAversion]>",
+    "[-2]% Strength <for [Major] Civilizations> <when above [95] [WarAversion]> <for every [6] [WarAversion]>",
+    "Trigger the function [MacroEco_OnTurnStart] with [] <upon turn start> <for [Major] Civilizations>",
+    "[Gold] cost of purchasing items in cities [-50]% <for [Major] Civilizations> <when between [-50] and [-40] [InflationIndex]>",
+    "[-50]% Gold cost of upgrading <for [Major] Civilizations> <when between [-50] and [-40] [InflationIndex]>",
+    "[Gold] cost of purchasing items in cities [-30]% <for [Major] Civilizations> <when between [-39] and [-21] [InflationIndex]>",
+    "[-30]% Gold cost of upgrading <for [Major] Civilizations> <when between [-39] and [-21] [InflationIndex]>",
+    "[Gold] cost of purchasing items in cities [-12]% <for [Major] Civilizations> <when between [-20] and [-7] [InflationIndex]>",
+    "[-12]% Gold cost of upgrading <for [Major] Civilizations> <when between [-20] and [-7] [InflationIndex]>",
+    "[Gold] cost of purchasing items in cities [15]% <for [Major] Civilizations> <when between [7] and [28] [InflationIndex]>",
+    "[15]% Gold cost of upgrading <for [Major] Civilizations> <when between [7] and [28] [InflationIndex]>",
+    "[Gold] cost of purchasing items in cities [42]% <for [Major] Civilizations> <when between [29] and [62] [InflationIndex]>",
+    "[42]% Gold cost of upgrading <for [Major] Civilizations> <when between [29] and [62] [InflationIndex]>",
+    "[Gold] cost of purchasing items in cities [82]% <for [Major] Civilizations> <when between [63] and [106] [InflationIndex]>",
+    "[82]% Gold cost of upgrading <for [Major] Civilizations> <when between [63] and [106] [InflationIndex]>",
+    "[Gold] cost of purchasing items in cities [130]% <for [Major] Civilizations> <when between [107] and [165] [InflationIndex]>",
+    "[130]% Gold cost of upgrading <for [Major] Civilizations> <when between [107] and [165] [InflationIndex]>",
+    "[Gold] cost of purchasing items in cities [200]% <for [Major] Civilizations> <when between [166] and [200] [InflationIndex]>",
+    "[200]% Gold cost of upgrading <for [Major] Civilizations> <when between [166] and [200] [InflationIndex]>"
+  ],
+  "unitUniques": [
+    "Instantly provides [2] [WarAversion] <upon being defeated> <for [Major] Civilizations> <when below [120] [WarAversion]>",
+    "Instantly consumes [1] [WarAversion] <upon defeating a [Military] unit> <for [Major] Civilizations> <when above [0] [WarAversion]>"
+  ]
+}
