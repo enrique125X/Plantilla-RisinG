@@ -122,13 +122,11 @@
   {
     "name": "Manila",
     "friendBonusUniques": [
-      "[+3 Food] [in capital]",
-//      "[+1]% [Food] from every [Seaside Building]"
+      "[+3 Food] [in capital]"
     ],
     "allyBonusUniques": [
       "[+3 Food] [in capital]",
-      "[+3]% [Food] [in all cities]",
-//      "[+2]% [Food] from every [Seaside Building]"
+      "[+3]% [Food] [in all cities]"
     ],
     "color": [56, 255, 112]
   },
@@ -167,8 +165,7 @@
     "allyBonusUniques": [
       "[+3 Food] [in capital]",
       "[+3]% [Food] [in all cities]",
-      "[+2 Food] from every [Atoll]",
-      "[+2 Food] from every [Seafall ruins]"
+      "[+2 Food] from every [Atoll]"
     ],
     "color": [56, 255, 112]
   },
@@ -259,12 +256,12 @@
     "friendBonusUniques": [
       "[+2 Gold] from each Trade Route <before the [Medieval era]>",
       "[+3 Gold] from each Trade Route <starting from the [Medieval era]>",
-      "[+1]% [Gold] from every [{Gold} {BUILDING}]"
+      "[+1]% [Gold] from every [Gold]"
     ],
     "allyBonusUniques": [
       "[+3 Gold] from each Trade Route <before the [Medieval era]>",
       "[+5 Gold] from each Trade Route <starting from the [Medieval era]>",
-      "[+3]% [Gold] from every [{Gold} {BUILDING}]"
+      "[+3]% [Gold] from every [Gold]"
     ],
     "color": [255, 216, 0]
   },
@@ -310,7 +307,7 @@
     "name": "Almaty",
     "friendBonusUniques": [
       "Provides military units every ≈[10] turns",
-      "[+7]% Strength <for [Mobile] units>"
+      "[+7]% Strength <for [Mounted] units>"
     ],
     "allyBonusUniques": [
       "Provides military units every ≈[5] turns <(modified by game speed)>",
@@ -322,11 +319,11 @@
     "name": "M'Banza-Kongo",
     "friendBonusUniques": [
       "Provides military units every ≈[10] turns",
-      "[+7]% Strength <for [Foot Soldier] units>"
+      "[+7]% Strength <for [Melee] units>"
     ],
     "allyBonusUniques": [
       "Provides military units every ≈[5] turns <(modified by game speed)>",
-      "[+12]% Strength <for [Foot Soldier] units>"
+      "[+12]% Strength <for [Melee] units>"
     ],
     "color": [255, 0, 0]
   },
@@ -334,11 +331,11 @@
     "name": "Sidon",
     "friendBonusUniques": [
       "Provides military units every ≈[10] turns",
-      "[+7]% Strength <for [Shooter] units>"
+      "[+7]% Strength <for [Ranged] units>"
     ],
     "allyBonusUniques": [
       "Provides military units every ≈[5] turns <(modified by game speed)>",
-      "[+12]% Strength <for [Shooter] units>"
+      "[+12]% Strength <for [Ranged] units>"
     ],
     "color": [255, 0, 0]
   },
@@ -346,11 +343,11 @@
     "name": "Valletta",
     "friendBonusUniques": [
       "Provides military units every ≈[10] turns",
-      "[+7]% Strength <for [Anti-Mobile] units>"
+      "[+7]% Strength <for [Melee] units>"
     ],
     "allyBonusUniques": [
       "Provides military units every ≈[5] turns <(modified by game speed)>",
-      "[+12]% Strength <for [Anti-Mobile] units>"
+      "[+12]% Strength <for [Melee] units>"
     ],
     "color": [255, 0, 0]
   },
@@ -406,13 +403,13 @@
       "[+3 Faith] <before the [Medieval era]>",
       "[+6 Faith] <starting from the [Medieval era]> <before the [Industrial era]>",
       "[+13 Faith] <starting from the [Industrial era]>",
-      "[+4]% [Faith] from every [{Faith} {BUILDING}]"
+      "[+4]% [Faith] from every [Faith]"
     ],
     "allyBonusUniques": [
       "[+6 Faith] <before the [Medieval era]>",
       "[+12 Faith] <starting from the [Medieval era]> <before the [Industrial era]>",
       "[+26 Faith] <starting from the [Industrial era]>",
-      "[+6]% [Faith] from every [{Faith} {BUILDING}]"
+      "[+6]% [Faith] from every [Faith]"
     ],
     "color": [255, 255, 255]
   },
